@@ -24,7 +24,7 @@
     "clean": "rm -rf ./public",
     "rebuild": "rm -rf ./node_modules && npm install",
     "rebuild:hard": "rm -rf package-lock.json && npm run rebuild",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build && gh-pages -d public"
   },
   "devDependencies": {
     "gh-pages": "^2.0.0",
