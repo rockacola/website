@@ -1,14 +1,19 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
+import userImage from '../images/user.png'
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <div className="component view index">
+      <div className="sandbox">
+        <div className="wrapper">
+          <div className="avatar">
+            <img src={userImage} alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
   </Layout>
 )
 
