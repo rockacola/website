@@ -1,38 +1,17 @@
-
+// Variables
+// --------------------------------------------------
 @import 'variables';
 
-body {
-  background-color: #e8e6ea;
-}
+// Third-party
+// --------------------------------------------------
+@import 'vendor/normalize/7.0.0/normalize-7.0.0';
 
-.view {
-  &.index {
-    .sandbox {
-      height: 100vh;
+// Partials
+// --------------------------------------------------
 
-      > .wrapper {
-        height: 100%;
+// Components
+// --------------------------------------------------
 
-        .avatar {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 120px;
-          height: 120px;
-          border-radius: 9999px;
-          border: solid 16px #cbc4c1;
-          transition: border-color .6s;
-
-          &:hover {
-            border-color: rgba(#cbc4c1, .75);
-          }
-
-          img {
-            width: 100%;
-          }
-        }
-      }
-    }
-  }
-}
+// Modules
+// --------------------------------------------------
+@import 'modules/global'; //This should be the first module you load
