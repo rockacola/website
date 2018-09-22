@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import '../stylesheets/main.scss'
 import favicon from '../images/favicon.ico'
+import { version } from '../../package.json'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -28,7 +29,7 @@ const Layout = ({ children }) => (
             { rel: 'shortcut icon', type: 'image/x-icon', href: `${favicon}`}
           ]}
         >
-          <html lang="en" />
+          <html lang="en" data-appver={version} />
         </Helmet>
         <div className="outline">
           {children}
