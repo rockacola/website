@@ -1,7 +1,7 @@
 {
   "name": "default-website",
   "description": "Default website",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {
     "gatsby": "^2.0.0",
     "gatsby-plugin-google-analytics": "^2.0.6",
