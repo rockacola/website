@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Layout from '../components/Layout'
 
 const AboutPage = () => (
-  <Layout title="About | Next.js + TypeScript Example">
+  <Layout>
     <h1>About</h1>
     <p className={`container bg-red-100 rounded p-4`}>This is the about page</p>
     <p>
