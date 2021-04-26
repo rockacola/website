@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Layout from '../components/layout'
+import ProfileSectionHeader from '../components/profile/section-header'
 import ProfileSocialLink from '../components/profile/social-link'
 // import '../styles/profile.css'
 
@@ -15,25 +16,23 @@ const SidebarSection = () => (
       <h3 className="mt-2 text-md">Solution Architect</h3>
     </div>
     <div className="block-container contact mx-4 my-6">
-      <div className="items">
-        <ProfileSocialLink
-          faName="fa-linkedin"
-          label="LinkedIn Profile"
-          href="https://www.linkedin.com/in/travislinau/"
-        />
-        <ProfileSocialLink
-          faName="fa-github"
-          label="GitHub Profile"
-          href="https://github.com/rockacola"
-        />
-      </div>
+      <ProfileSocialLink
+        faName="fa-linkedin"
+        label="LinkedIn Profile"
+        href="https://www.linkedin.com/in/travislinau/"
+      />
+      <ProfileSocialLink
+        faName="fa-github"
+        label="GitHub Profile"
+        href="https://github.com/rockacola"
+      />
     </div>
     <div className="block-container education mx-4 my-6">
-      <h2>Education</h2>
+      <ProfileSectionHeader label="Education" />
       <div className="items">TBA</div>
     </div>
     <div className="block-container interest mx-4 my-6">
-      <h2>Interest</h2>
+      <ProfileSectionHeader label="Interest" />
       <div className="items">TBA</div>
     </div>
   </div>
