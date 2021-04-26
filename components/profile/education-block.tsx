@@ -4,7 +4,7 @@ interface ProfileEducationBlockProps {
   item: ProfileEducationItem
 }
 
-function ProfileEducationBlock({ item }: ProfileEducationBlockProps) {
+export function ProfileEducationBlock({ item }: ProfileEducationBlockProps) {
   return (
     <div className="my-4">
       <div className="">{item.degree}</div>
@@ -13,5 +13,3 @@ function ProfileEducationBlock({ item }: ProfileEducationBlockProps) {
     </div>
   )
 }
-
-export default ProfileEducationBlock

@@ -1,10 +1,7 @@
-import Link from 'next/link'
-import { data } from 'remark'
-import Layout from '../components/layout'
-import ProfileSectionHeader from '../components/profile/section-header'
-import ProfileEducationBlock from '../components/profile/education-block'
-import ProfileSocialLink from '../components/profile/social-link'
-// import '../styles/profile.css'
+import { Layout } from '../components/layout'
+import { ProfileSectionHeader } from '../components/profile/section-header'
+import { ProfileEducationBlock } from '../components/profile/education-block'
+import { ProfileSocialLink } from '../components/profile/social-link'
 import { profile, ProfileProps } from '../data'
 
 export async function getStaticProps() {

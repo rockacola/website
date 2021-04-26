@@ -4,7 +4,11 @@ interface ProfileSocialLinkProps {
   label: string
 }
 
-function ProfileSocialLink({ faName, href, label }: ProfileSocialLinkProps) {
+export function ProfileSocialLink({
+  faName,
+  href,
+  label,
+}: ProfileSocialLinkProps) {
   return (
     <div>
       <span className="pr-2">
@@ -18,5 +22,3 @@ function ProfileSocialLink({ faName, href, label }: ProfileSocialLinkProps) {
     </div>
   )
 }
-
-export default ProfileSocialLink

@@ -3,7 +3,10 @@ interface ProfileSectionHeaderProps {
   label: string
 }
 
-function ProfileSectionHeader({ faName, label }: ProfileSectionHeaderProps) {
+export function ProfileSectionHeader({
+  faName,
+  label,
+}: ProfileSectionHeaderProps) {
   return (
     <div className={`py-2`}>
       {!!faName && (
@@ -15,5 +18,3 @@ function ProfileSectionHeader({ faName, label }: ProfileSectionHeaderProps) {
     </div>
   )
 }
-
-export default ProfileSectionHeader
