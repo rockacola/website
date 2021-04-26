@@ -1,34 +1,29 @@
 {
-  "name": "default-website",
-  "description": "Default website",
-  "version": "1.0.2",
-  "dependencies": {
-    "gatsby": "^2.0.0",
-    "gatsby-plugin-google-analytics": "^2.0.6",
-    "gatsby-plugin-manifest": "^2.0.2",
-    "gatsby-plugin-offline": "^2.0.5",
-    "gatsby-plugin-react-helmet": "^3.0.0",
-    "gatsby-plugin-sass": "^2.0.1",
-    "node-sass": "^4.9.3",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0"
-  },
+  "name": "website-2021",
+  "version": "2.0.0",
+  "private": true,
   "scripts": {
-    "gatsby": "gatsby",
-    "prettier": "prettier",
-    "gh-pages": "gh-pages",
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write './src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -rf ./public",
-    "rebuild": "rm -rf ./node_modules && npm install",
-    "rebuild:hard": "rm -rf package-lock.json && npm run rebuild",
-    "deploy": "gatsby build && gh-pages -d public"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "format": "prettier --write './{components,interfaces,pages,styles}/**/*.{ts,tsx,css}'"
+  },
+  "dependencies": {
+    "date-fns": "^2.21.1",
+    "gray-matter": "^4.0.3",
+    "next": "^10.1.3",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "remark": "^13.0.0",
+    "remark-html": "^13.0.1"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.0",
-    "prettier": "^1.14.3"
+    "@types/node": "^14.14.41",
+    "@types/react": "^17.0.3",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.12",
+    "prettier": "^2.2.1",
+    "tailwindcss": "^2.1.2",
+    "typescript": "^4.2.4"
   }
 }
