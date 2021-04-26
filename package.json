@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "deploy": "next build && next export",
     "start": "next start",
     "format": "prettier --write './{components,interfaces,pages,styles}/**/*.{ts,tsx,css}'"
   },
