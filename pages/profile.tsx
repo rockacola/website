@@ -3,6 +3,7 @@ import { ProfileSectionHeader } from '../components/profile/section-header'
 import { ProfileEducationBlock } from '../components/profile/education-block'
 import { ProfileSocialLink } from '../components/profile/social-link'
 import { profile, ProfileProps } from '../data'
+import { ProfileInterestBlock } from '../components/profile/interest-block'
 
 export async function getStaticProps() {
   return {
@@ -37,7 +38,7 @@ const SidebarSection = (profile: ProfileProps) => (
     </div>
     <div className="block-container education mx-4 my-6">
       <ProfileSectionHeader label="Education" />
-      <div className="items">
+      <div className="my-2">
         {profile.educations.map((item) => (
           <ProfileEducationBlock key={item.institute} item={item} />
         ))}
@@ -45,7 +46,11 @@ const SidebarSection = (profile: ProfileProps) => (
     </div>
     <div className="block-container interest mx-4 my-6">
       <ProfileSectionHeader label="Interest" />
-      <div className="items">TBA</div>
+      <div className="my-2">
+        {profile.interests.map((item) => (
+          <ProfileInterestBlock key={item.key} item={item} />
+        ))}
+      </div>
     </div>
   </div>
 )
