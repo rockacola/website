@@ -11,7 +11,7 @@ export function ProfileSkillGroupBlock({
   items,
 }: ProfileSkillGroupBlockProps) {
   return (
-    <div className={`my-4`}>
+    <div className={`my-3 lg:my-1 mr-8 md:mr-12 lg:mr-0`}>
       <div className={`py-2`}>
         <span className={`font-bold text-md`}>{title}</span>
       </div>

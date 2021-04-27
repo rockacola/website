@@ -125,7 +125,7 @@ interface ProfilePageProps {
 function ProfilePage({ profile }: ProfilePageProps) {
   return (
     <Layout>
-      <div className={`container mx-auto font-roboto`}>
+      <div className={`container mx-auto font-roboto lg:max-w-screen-lg`}>
         <div
           className={`mt-8 mb-16 mx-4 lg:mx-0 lg:flex flex-row-reverse items-stretch filter drop-shadow`}
         >
