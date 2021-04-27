@@ -8,9 +8,9 @@ export function ProfileSectionHeader({
   label,
 }: ProfileSectionHeaderProps) {
   return (
-    <div className={`py-2`}>
+    <div className={`py-2 flex items-center`}>
       {!!faName && (
-        <span>
+        <span className={`pr-2`}>
           <i className={`fa ${faName}`}></i>
         </span>
       )}

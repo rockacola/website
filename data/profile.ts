@@ -30,13 +30,15 @@ export interface ProfileSkillItem {
 }
 
 export interface ProfileProps {
+  description: string
+  expertises: string[]
   educations: ProfileEducationItem[]
   interests: ProfileInterestItem[]
   experiences: ProfileExperienceItem[]
   skills: {
     languages: ProfileSkillItem[]
     frameworks: ProfileSkillItem[]
-    library: ProfileSkillItem[]
+    libraries: ProfileSkillItem[]
     tools: ProfileSkillItem[]
     paradigms: ProfileSkillItem[]
     platforms: ProfileSkillItem[]
@@ -45,6 +47,14 @@ export interface ProfileProps {
 }
 
 export const profile: ProfileProps = {
+  description: `Direct experience with web-oriented solution engineering and software development. Technical leadership by improving structural communication & collaborative methodologies and enhancing incremental delivery workflow & delivery per projects' needs.`,
+  expertises: [
+    `Program analysis`,
+    `Service-oriented architecture`,
+    `Legacy management`,
+    `SPA, responsive webapp development`,
+    `Continuous integration & continuous delivery`,
+  ],
   educations: [
     {
       degree: 'MSc IT',
