@@ -17,7 +17,7 @@ export async function getStaticProps() {
 }
 
 const SidebarSection = (profile: ProfileProps) => (
-  <div className={`pb-4 bg-profile-secondary text-white`}>
+  <div className={`pb-4 text-white`}>
     <div className="bg-profile-primary px-6 py-8 text-center">
       <img
         className="inline-block rounded-full"
@@ -27,7 +27,7 @@ const SidebarSection = (profile: ProfileProps) => (
       <h1 className="mt-4 text-3xl">Travis Lin</h1>
       <h3 className="mt-2 text-md opacity-70">Solution Architect</h3>
     </div>
-    <div className="block-container contact mx-4 my-6">
+    <div className="mx-6 my-10">
       <ProfileSocialLink
         faName="fa-linkedin"
         label="LinkedIn Profile"
@@ -39,15 +39,15 @@ const SidebarSection = (profile: ProfileProps) => (
         href="https://github.com/rockacola"
       />
     </div>
-    <div className="block-container education mx-4 my-6">
+    <div className="mx-6 my-10">
       <ProfileSectionHeader label="Education" />
-      <div className="my-2">
+      <div className="-my-2">
         {profile.educations.map((item) => (
           <ProfileEducationBlock key={item.institute} item={item} />
         ))}
       </div>
     </div>
-    <div className="block-container interest mx-4 my-6">
+    <div className="mx-6 my-10">
       <ProfileSectionHeader label="Interest" />
       <div className="my-2">
         {profile.interests.map((item) => (
@@ -59,7 +59,7 @@ const SidebarSection = (profile: ProfileProps) => (
 )
 
 const BodySection = (profile: ProfileProps) => (
-  <div className={`text-gray-600 p-4`}>
+  <div className={`text-gray-600 px-6 py-6 lg:px-12`}>
     <ProfileSectionBlock>
       <ProfileSectionHeader faName="fa-user" label="Career Profile" />
       <div>{profile.description}</div>
@@ -127,9 +127,11 @@ function ProfilePage({ profile }: ProfilePageProps) {
     <Layout>
       <div className={`container mx-auto font-roboto`}>
         <div
-          className={`my-8 mx-4 lg:mx-0 lg:flex flex-row-reverse filter drop-shadow`}
+          className={`mt-8 mb-16 mx-4 lg:mx-0 lg:flex flex-row-reverse items-stretch filter drop-shadow`}
         >
-          <div className={`flex-grow-0 flex-shrink-0 lg:w-60`}>
+          <div
+            className={`flex-grow-0 flex-shrink-0 lg:w-60 bg-profile-secondary`}
+          >
             {SidebarSection(profile)}
           </div>
           <div className={`flex-grow bg-white`}>{BodySection(profile)}</div>
