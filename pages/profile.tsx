@@ -69,7 +69,9 @@ const BodySection = (profile: ProfileProps) => (
       <ProfileSectionHeader faName="fa-bullseye" label="Area of Expertise" />
       <div>
         {profile.expertises.map((item) => (
-          <div key={item} className={`my-1`}>{item}</div>
+          <div key={item} className={`my-1`}>
+            {item}
+          </div>
         ))}
       </div>
     </ProfileSectionBlock>

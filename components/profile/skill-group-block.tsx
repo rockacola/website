@@ -11,13 +11,15 @@ export function ProfileSkillGroupBlock({
   items,
 }: ProfileSkillGroupBlockProps) {
   return (
-    <div className={`bg-blue-50 my-4`}>
+    <div className={`my-4`}>
       <div className={`py-2`}>
         <span className={`font-bold text-md`}>{title}</span>
       </div>
-      <div>
+      <div className={`lg:flex items-center flex-wrap`}>
         {items.map((item) => (
-          <ProfileSkillBlock item={item} />
+          <div className={`lg:w-1/2`}>
+            <ProfileSkillBlock item={item} />
+          </div>
         ))}
       </div>
     </div>
