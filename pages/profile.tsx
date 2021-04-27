@@ -59,7 +59,7 @@ const SidebarSection = (profile: ProfileProps) => (
 )
 
 const BodySection = (profile: ProfileProps) => (
-  <div className={`text-gray-500 p-4`}>
+  <div className={`text-gray-600 p-4`}>
     <ProfileSectionBlock>
       <ProfileSectionHeader faName="fa-user" label="Career Profile" />
       <div>{profile.description}</div>
@@ -69,14 +69,14 @@ const BodySection = (profile: ProfileProps) => (
       <ProfileSectionHeader faName="fa-bullseye" label="Area of Expertise" />
       <div>
         {profile.expertises.map((item) => (
-          <div key={item}>{item}</div>
+          <div key={item} className={`my-1`}>{item}</div>
         ))}
       </div>
     </ProfileSectionBlock>
 
     <ProfileSectionBlock>
       <ProfileSectionHeader faName="fa-briefcase" label=" Experience" />
-      <div>
+      <div className={`-mt-4`}>
         {profile.experiences.map((item) => (
           <ProfileExperienceBlock key={item.id} item={item} />
         ))}

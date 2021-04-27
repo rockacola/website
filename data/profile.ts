@@ -185,6 +185,9 @@ export const profile: ProfileProps = {
       // { label: '.NET Framework', proficiency: 5 },
       // { label: 'Express.js', proficiency: 7 },
       // loopback
+      // chakra ui
+      // ant design
+      // CSS-in-JS
     ],
     libraries: [
       { label: 'jQuery', proficiency: 9 },

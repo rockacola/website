@@ -1,4 +1,5 @@
 import { ProfileSkillItem } from '../../data'
+import { ProfileSkillBlock } from './skill-block'
 
 interface ProfileSkillGroupBlockProps {
   title: string
@@ -16,7 +17,7 @@ export function ProfileSkillGroupBlock({
       </div>
       <div>
         {items.map((item) => (
-          <div className={`my-1 bg-red-50`}>{item.label}</div>
+          <ProfileSkillBlock item={item} />
         ))}
       </div>
     </div>
